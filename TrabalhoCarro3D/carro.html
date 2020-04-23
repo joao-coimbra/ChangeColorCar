@@ -2,12 +2,22 @@
 <html>
 
 <head>
-  <title>Mudança de cor do carro</title>
+  <title>URCAR - Seu Carro No Seu Estilo</title>
 
   <!-- Biblioteca X3DOM -->
   <script src="x3dom/x3dom.js"></script>
   <link rel='stylesheet' type='text/css' href='x3dom/x3dom.css'>
   </link>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
 
   <!-- public CSS & JS -->
   <link rel="stylesheet" href="public/style.css">
@@ -277,8 +287,10 @@
           <transform DEF='mirror_glas' scale='0.9285 0.9285 0.9285' translation='0.0002762 1.41 -0.308'>
             <shape>
               <appearance>
+
                 <imageTexture DEF='AOPT_ImageTexture_138430592'
                   url='"https://x3dom.org/x3dom/example/texture/car/window-orig.jpg"'></imageTexture>
+
               </appearance>
               <indexedFaceSet DEF='mirror_glas-FACES' creaseAngle='3.14'
                 texCoordIndex='28 29 30 -1 30 29 31 -1 31 29 32 -1 32 29 33 -1 33 29 34 -1 34 29 35 -1 35 29 36 -1 36 29 37 -1 37 29 38 -1 38 29 39 -1 39 29 40 -1 40 29 41 -1 41 29 42 -1 42 29 43 -1 43 29 44 -1 44 29 45 -1 45 29 46 -1 46 29 47 -1 47 29 48 -1 48 29 49 -1 49 29 50 -1 50 29 51 -1 51 29 52 -1 52 29 53 -1 53 29 54 -1 54 29 55 -1 55 29 28 -1 7 0 8 -1 6 0 7 -1 5 0 6 -1 4 0 5 -1 3 0 4 -1 2 0 3 -1 1 0 2 -1 27 0 1 -1 26 0 27 -1 25 0 26 -1 24 0 25 -1 23 0 24 -1 22 0 23 -1 21 0 22 -1 20 0 21 -1 19 0 20 -1 18 0 19 -1 17 0 18 -1 16 0 17 -1 15 0 16 -1 14 0 15 -1 13 0 14 -1 12 0 13 -1 11 0 12 -1 10 0 11 -1 9 0 10 -1 8 0 9 -1'
@@ -703,59 +715,102 @@
       </x3d>
     </div>
 
-    <div class="box-change">
-      <p>Change color</p>
-
-      <!-- Criar Menu de Cores Aqui... -->
-      <div class="box-button">
-        <div class="buttons">
-          <button class="red" onclick="changeColor('#FF0000')">
-            <button class="blue" onclick="changeColor('#0500FF')">
-              <button class="yellow" onclick="changeColor('#DBFF00')">
-                <button class="pink" onclick="changeColor('#FA00FF')">
-                  <button class="black" onclick="changeColor('black')">
-                    <button class="silver" onclick="changeColor('silver')">
-                      <button class="white" onclick="changeColor('white')">
-        </div>
+    <!-- Criar Menu de Troca de Rodas Aqui... -->
+    <div class="box-texture">
+      <div class="buttons">
+        <img class="tex" src="public/imagens/felge1_64.jpg" onclick="changeTexture('public/imagens/felge1_64.jpg')"
+          width="40px" height="40px">
+        <img src="public/imagens/felge2_64.jpg" onclick="changeTexture('public/imagens/felge2_64.jpg')" width="40px"
+          height="40px">
+        <img src="public/imagens/felge3_64.jpg" onclick="changeTexture('public/imagens/felge3_64.jpg')" width="40px"
+          height="40px">
+        <img src="public/imagens/felge4_64.jpg" onclick="changeTexture('public/imagens/felge4_64.jpg')" width="40px"
+          height="40px">
+        <img src="public/imagens/felge5_64.jpg" onclick="changeTexture('public/imagens/felge5_64.jpg')" width="40px"
+          height="40px">
       </div>
     </div>
 
     <div class="box-change">
-      <p>Change Wheels</p>
+      <div class="box-icons">
+        <div class="icons">
+          <button id="Btncar" class="icon"
+            onclick="disableButton1(); enableButton2(); hideSection2(); showSection1()" disabled>
+            <img src="public/imagens/iconcar.png" alt="" id="icon">
+            <img src="public/imagens/iconcar2.png" alt="" id="icon2">
+          </button>
+        </div>
 
-      <!-- Criar Menu de Troca de Rodas Aqui... -->
-      <div class="box-texture">
-        <div class="buttons">
-          <img class="tex" src="public/imagens/felge1_64.jpg" onclick="changeTexture('public/imagens/felge1_64.jpg')"
-            width="40px" height="40px">
-          <img src="public/imagens/felge2_64.jpg" onclick="changeTexture('public/imagens/felge2_64.jpg')" width="40px"
-            height="40px">
-          <img src="public/imagens/felge3_64.jpg" onclick="changeTexture('public/imagens/felge3_64.jpg')" width="40px"
-            height="40px">
-          <img src="public/imagens/felge4_64.jpg" onclick="changeTexture('public/imagens/felge4_64.jpg')" width="40px"
-            height="40px">
-          <img src="public/imagens/felge5_64.jpg" onclick="changeTexture('public/imagens/felge5_64.jpg')" width="40px"
-            height="40px">
+        <div class="icons iconwindow distance-icon">
+          <button id="Btnwindow" class="icon"
+            onclick="enableButton1(); disableButton2(); hideSection1(); showSection2()">
+            <img src="public/imagens/iconcar.png" alt="" id="icon">
+            <img src="public/imagens/iconcar2.png" alt="" id="icon2">
+          </button>
         </div>
       </div>
-    </div>
 
-    <div class="box-change">
-      <p>Change Handle</p>
+      <section id="box-change-color" class="box-change-color">
 
-      <!-- Criar Menu de Cores das Maçanetas Aqui... -->
-      <div class="box-button">
-        <div class="buttons">
-          <button class="red" onclick="changeMacaneta('red')">
-            <button class="blue" onclick="changeMacaneta('blue')">
-              <button class="yellow" onclick="changeMacaneta('yellow')">
-                <button class="pink" onclick="changeMacaneta('#FA00FF')">
-                  <button class="black" onclick="changeMacaneta('black')">
-                    <button class="silver" onclick="changeMacaneta('silver')">
-                      <button class="white" onclick="changeMacaneta('white')">
+        <!-- Criar Menu de Cores Aqui... -->
+        <div class="palletes red-pallete">
+          <button class="button color1" onclick="changeColor('#FF0000')">
+            <button class="button color2" onclick="changeColor('#CE0000')">
+              <button class="button color3" onclick="changeColor('#AD0000')">
+                <button class="button color4" onclick="changeColor('#8C0000')">
+                  <button class="button color5" onclick="changeColor('#6B0000')">
         </div>
-      </div>
-    </div>
+
+        <div class="palletes yellow-pallete distance-top-pallete">
+          <button class="button color1" onclick="changeColor('#FFFF00')">
+            <button class="button color2" onclick="changeColor('#D3CD00')">
+              <button class="button color3" onclick="changeColor('#A79C00')">
+                <button class="button color4" onclick="changeColor('#7A6A00')">
+                  <button class="button color5" onclick="changeColor('#4E3900')">
+        </div>
+
+        <div class="palletes pandw-pallete distance-top-pallete">
+          <button class="button color1" onclick="changeColor('#FFFFFF')">
+            <button class="button color2" onclick="changeColor('#C9C9C9')">
+              <button class="button color3" onclick="changeColor('#8A8A8A')">
+                <button class="button color4" onclick="changeColor('#3D3D3D')">
+                  <button class="button color5" onclick="changeColor('#050505')">
+        </div>
+      </section>
+
+      <section id="box-change-color-window" class="box-change-color-window">
+
+        <!-- Criar Menu de Cores Aqui... -->
+        <div class="palletes yellow-pallete distance-top-pallete-first">
+          <button class="button color1" onclick="changeColor('#FFFF00')">
+            <button class="button color2" onclick="changeColor('#D3CD00')">
+              <button class="button color3" onclick="changeColor('#A79C00')">
+                <button class="button color4" onclick="changeColor('#7A6A00')">
+                  <button class="button color5" onclick="changeColor('#4E3900')">
+        </div>
+
+        <div class="palletes pandw-pallete distance-top-pallete">
+          <button class="button color1" onclick="changeColor('#FFFFFF')">
+            <button class="button color2" onclick="changeColor('#C9C9C9')">
+              <button class="button color3" onclick="changeColor('#8A8A8A')">
+                <button class="button color4" onclick="changeColor('#3D3D3D')">
+                  <button class="button color5" onclick="changeColor('#050505')">
+        </div>
+      </section>
+      <!-- <div class="box-change">
+
+       Criar Menu de Cores das Maçanetas Aqui... -->
+      <!-- <div class="box-button">
+          <div class="buttons">
+            <button class="red" onclick="changeMacaneta('red')">
+              <button class="blue" onclick="changeMacaneta('blue')">
+                <button class="yellow" onclick="changeMacaneta('yellow')">
+                  <button class="pink" onclick="changeMacaneta('#FA00FF')">
+                    <button class="black" onclick="changeMacaneta('black')">
+                      <button class="silver" onclick="changeMacaneta('silver')">
+                        <button class="white" onclick="changeMacaneta('white')">
+        </div>
+    </div> -->
   </main>
 
 </body>
