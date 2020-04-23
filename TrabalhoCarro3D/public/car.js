@@ -4,6 +4,7 @@ function changeColor(color) {
   }
 
  function changeTexture(tex) {
-		document.getElementById('rim_tex').setAttribute("url", tex);
-	}
+    var wheel = document.getElementById('rim_tex');
+    wheel.setAttribute("url", tex);
+  }
   
