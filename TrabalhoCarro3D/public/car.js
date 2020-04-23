@@ -7,4 +7,9 @@ function changeColor(color) {
     var wheel = document.getElementById('rim_tex');
     wheel.setAttribute("url", tex);
   }
+
+  function changeMacaneta(color) {
+    var material = document.getElementById('macaneta');
+    material.setAttribute("diffuseColor", color);
+  }
   
