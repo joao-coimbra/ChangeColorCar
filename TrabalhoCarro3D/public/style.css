@@ -11,7 +11,8 @@ body {
 }
 
 main {
-    margin: 0px auto;
+    margin: 0 auto 70px;
+    width: 100%;
 }
 
 /* Logo */
@@ -27,30 +28,52 @@ main {
 .car {
     position: relative;
     text-align: center;
-    width: auto;
+    max-width: 600px;
+    max-height: 300px;
+    min-width: 200px;
+    min-height: 100px;
+}
+
+#x3d {
+    max-width: 400px;
+    max-height: 200px;
+    max-width: 200px;
+    max-height: 100px;
 }
 
 /* Painel chance */
 
-.box-texture {
-    width: 650px;
-}
-
 .box-change {
+    position: relative;
     width: 650px;
-    margin: 30px auto;
-    margin-bottom: 280px;
+    margin: auto;
+    padding-bottom: 200px;
+    padding-top: 70px;
 }
 
-.box-change-color, .box-change-color-window {
+#box-texture {
+    vertical-align: middle;
+    margin-top: 20%;
+    bottom: 0;
+}
+
+#box-texture img {
+    width: 50px;
+    height: 50px;
+}
+
+#box-change-color, #box-change-color-window {
     margin: 10px 70px;
     float: right;
     position: relative;
     width: 250px;
 }
 
-.box-change-color-window {
+#box-change-color-window {
     display: none;
+    vertical-align: middle;
+    height: 203px;
+    margin-bottom: 40px;
 }
 
 /* Paletas de cores */
@@ -68,6 +91,10 @@ main {
     width: 50px;
     height: 50px;
     border: none;
+}
+
+.buttons img {
+    margin: 0px 2px;
 }
 
 /* Botões e seus ícones */

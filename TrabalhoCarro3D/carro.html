@@ -3,21 +3,12 @@
 
 <head>
   <title>URCAR - Seu Carro No Seu Estilo</title>
+  <link rel="shortcut icon" href="public/imagens/favicon.ico" type="image/x-icon">
 
   <!-- Biblioteca X3DOM -->
   <script src="x3dom/x3dom.js"></script>
   <link rel='stylesheet' type='text/css' href='x3dom/x3dom.css'>
   </link>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
 
   <!-- public CSS & JS -->
   <link rel="stylesheet" href="public/style.css">
@@ -27,12 +18,12 @@
 
 <body>
 
-  <main>
+  
 
     <img class="img-logo" src="public/imagens/logo.png" alt="logo">
-
+<main>
     <div class="car">
-      <x3d id='x3d' showStat='false' showLog='false' width='800px' height='500px' style="display:inline;">
+      <x3d id='x3d' showStat='false' showLog='false' style="display:inline;">
         <scene DEF='scene'>
           <viewpoint orientation='-0.600069 0.799493 -0.0269947 0.77042' position='3.05702 2.90676 4.27241'></viewpoint>
           <background skyColor='black'></background>
@@ -716,21 +707,7 @@
     </div>
 
     <!-- Criar Menu de Troca de Rodas Aqui... -->
-    <div class="box-texture">
-      <div class="buttons">
-        <img class="tex" src="public/imagens/felge1_64.jpg" onclick="changeTexture('public/imagens/felge1_64.jpg')"
-          width="40px" height="40px">
-        <img src="public/imagens/felge2_64.jpg" onclick="changeTexture('public/imagens/felge2_64.jpg')" width="40px"
-          height="40px">
-        <img src="public/imagens/felge3_64.jpg" onclick="changeTexture('public/imagens/felge3_64.jpg')" width="40px"
-          height="40px">
-        <img src="public/imagens/felge4_64.jpg" onclick="changeTexture('public/imagens/felge4_64.jpg')" width="40px"
-          height="40px">
-        <img src="public/imagens/felge5_64.jpg" onclick="changeTexture('public/imagens/felge5_64.jpg')" width="40px"
-          height="40px">
-      </div>
-    </div>
-
+    
     <div class="box-change">
       <div class="box-icons">
         <div class="icons">
@@ -744,13 +721,13 @@
         <div class="icons iconwindow distance-icon">
           <button id="Btnwindow" class="icon"
             onclick="enableButton1(); disableButton2(); hideSection1(); showSection2()">
-            <img src="public/imagens/iconcar.png" alt="" id="icon">
-            <img src="public/imagens/iconcar2.png" alt="" id="icon2">
+            <img src="public/imagens/wheel_icon_black.png" alt="" id="icon">
+            <img src="public/imagens/wheel_icon_white.png" alt="" id="icon2">
           </button>
         </div>
       </div>
 
-      <section id="box-change-color" class="box-change-color">
+      <section id="box-change-color">
 
         <!-- Criar Menu de Cores Aqui... -->
         <div class="palletes red-pallete">
@@ -778,24 +755,17 @@
         </div>
       </section>
 
-      <section id="box-change-color-window" class="box-change-color-window">
+      <section id="box-change-color-window">
 
         <!-- Criar Menu de Cores Aqui... -->
-        <div class="palletes yellow-pallete distance-top-pallete-first">
-          <button class="button color1" onclick="changeColor('#FFFF00')">
-            <button class="button color2" onclick="changeColor('#D3CD00')">
-              <button class="button color3" onclick="changeColor('#A79C00')">
-                <button class="button color4" onclick="changeColor('#7A6A00')">
-                  <button class="button color5" onclick="changeColor('#4E3900')">
+        <div id="box-texture">
+            <img src="public/imagens/felge1_64.jpg" onclick="changeTexture('public/imagens/felge1_64.jpg')">
+            <img src="public/imagens/felge2_64.jpg" onclick="changeTexture('public/imagens/felge2_64.jpg')">
+            <img src="public/imagens/felge3_64.jpg" onclick="changeTexture('public/imagens/felge3_64.jpg')">
+            <img src="public/imagens/felge4_64.jpg" onclick="changeTexture('public/imagens/felge4_64.jpg')">
+            <img src="public/imagens/felge5_64.jpg" onclick="changeTexture('public/imagens/felge5_64.jpg')">
         </div>
-
-        <div class="palletes pandw-pallete distance-top-pallete">
-          <button class="button color1" onclick="changeColor('#FFFFFF')">
-            <button class="button color2" onclick="changeColor('#C9C9C9')">
-              <button class="button color3" onclick="changeColor('#8A8A8A')">
-                <button class="button color4" onclick="changeColor('#3D3D3D')">
-                  <button class="button color5" onclick="changeColor('#050505')">
-        </div>
+    
       </section>
       <!-- <div class="box-change">
 
@@ -809,8 +779,8 @@
                     <button class="black" onclick="changeMacaneta('black')">
                       <button class="silver" onclick="changeMacaneta('silver')">
                         <button class="white" onclick="changeMacaneta('white')">
-        </div>
-    </div> -->
+        </div>-->
+    </div>
   </main>
 
 </body>

@@ -55,5 +55,5 @@ function showSection1(){
 
 function showSection2(){
   var section = document.getElementById('box-change-color-window');
-  section.style.display = 'block';
+  section.style.display = 'table';
 }
