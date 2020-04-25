@@ -25,7 +25,7 @@ function disableButton1() {
 }
 
 function disableButton2() {
-  document.getElementById("Btnwindow").disabled = true ;
+  document.getElementById("Btnwheel").disabled = true ;
 }
 
 function enableButton1(){
@@ -33,7 +33,7 @@ function enableButton1(){
 }
 
 function enableButton2(){
-  document.getElementById("Btnwindow").disabled = false ;
+  document.getElementById("Btnwheel").disabled = false ;
 }
 
 // Funções para mostrar e ocultar cada section

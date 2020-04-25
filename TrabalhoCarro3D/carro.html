@@ -18,10 +18,10 @@
 
 <body>
 
-  
+  <main>
 
     <img class="img-logo" src="public/imagens/logo.png" alt="logo">
-<main>
+
     <div class="car">
       <x3d id='x3d' showStat='false' showLog='false' style="display:inline;">
         <scene DEF='scene'>
@@ -707,19 +707,19 @@
     </div>
 
     <!-- Criar Menu de Troca de Rodas Aqui... -->
-    
+
     <div class="box-change">
       <div class="box-icons">
         <div class="icons">
-          <button id="Btncar" class="icon"
-            onclick="disableButton1(); enableButton2(); hideSection2(); showSection1()" disabled>
+          <button id="Btncar" class="icon" onclick="disableButton1(); enableButton2(); hideSection2(); showSection1()"
+            disabled>
             <img src="public/imagens/iconcar.png" alt="" id="icon">
             <img src="public/imagens/iconcar2.png" alt="" id="icon2">
           </button>
         </div>
 
-        <div class="icons iconwindow distance-icon">
-          <button id="Btnwindow" class="icon"
+        <div class="icons iconwheel distance-icon">
+          <button id="Btnwheel" class="icon"
             onclick="enableButton1(); disableButton2(); hideSection1(); showSection2()">
             <img src="public/imagens/wheel_icon_black.png" alt="" id="icon">
             <img src="public/imagens/wheel_icon_white.png" alt="" id="icon2">
@@ -755,22 +755,19 @@
         </div>
       </section>
 
-      <section id="box-change-color-window">
+      <section id="box-change-color-wheel">
 
-        <!-- Criar Menu de Cores Aqui... -->
+        <!-- Criar Menu de Rodas Aqui... -->
         <div id="box-texture">
-            <img src="public/imagens/felge1_64.jpg" onclick="changeTexture('public/imagens/felge1_64.jpg')">
-            <img src="public/imagens/felge2_64.jpg" onclick="changeTexture('public/imagens/felge2_64.jpg')">
-            <img src="public/imagens/felge3_64.jpg" onclick="changeTexture('public/imagens/felge3_64.jpg')">
-            <img src="public/imagens/felge4_64.jpg" onclick="changeTexture('public/imagens/felge4_64.jpg')">
-            <img src="public/imagens/felge5_64.jpg" onclick="changeTexture('public/imagens/felge5_64.jpg')">
+          <img src="public/imagens/felge1_64.jpg" onclick="changeTexture('public/imagens/felge1_64.jpg')">
+          <img src="public/imagens/felge2_64.jpg" onclick="changeTexture('public/imagens/felge2_64.jpg')">
+          <img src="public/imagens/felge3_64.jpg" onclick="changeTexture('public/imagens/felge3_64.jpg')">
+          <img src="public/imagens/felge4_64.jpg" onclick="changeTexture('public/imagens/felge4_64.jpg')">
+          <img src="public/imagens/felge5_64.jpg" onclick="changeTexture('public/imagens/felge5_64.jpg')">
         </div>
-    
-      </section>
-      <!-- <div class="box-change">
 
-       Criar Menu de Cores das Maçanetas Aqui... -->
-      <!-- <div class="box-button">
+      </section>
+        <!-- <div class="box-button">
           <div class="buttons">
             <button class="red" onclick="changeMacaneta('red')">
               <button class="blue" onclick="changeMacaneta('blue')">
@@ -779,6 +776,7 @@
                     <button class="black" onclick="changeMacaneta('black')">
                       <button class="silver" onclick="changeMacaneta('silver')">
                         <button class="white" onclick="changeMacaneta('white')">
+                        </div>
         </div>-->
     </div>
   </main>

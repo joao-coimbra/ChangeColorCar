@@ -62,14 +62,14 @@ main {
     height: 50px;
 }
 
-#box-change-color, #box-change-color-window {
+#box-change-color, #box-change-color-wheel {
     margin: 10px 70px;
     float: right;
     position: relative;
     width: 250px;
 }
 
-#box-change-color-window {
+#box-change-color-wheel {
     display: none;
     vertical-align: middle;
     height: 203px;
