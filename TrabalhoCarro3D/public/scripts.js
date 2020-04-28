@@ -44,7 +44,7 @@ function hideSection1(){
 }
 
 function hideSection2(){
-  var section = document.getElementById('box-change-color-window');
+  var section = document.getElementById('box-change-color-wheel');
   section.style.display = 'none';
 }
 
@@ -54,6 +54,6 @@ function showSection1(){
 }
 
 function showSection2(){
-  var section = document.getElementById('box-change-color-window');
+  var section = document.getElementById('box-change-color-wheel');
   section.style.display = 'table';
 }
