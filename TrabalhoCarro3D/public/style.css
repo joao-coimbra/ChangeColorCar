@@ -119,6 +119,10 @@ section {
     width: 250px;
 }
 
+#box-texture {
+    margin-top: 5vh;
+}
+
 /* red pallete */
 
 .red-pallete .color1 {
