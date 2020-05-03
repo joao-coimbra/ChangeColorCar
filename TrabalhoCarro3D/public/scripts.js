@@ -20,40 +20,40 @@ function changeMacaneta(color) {
   
 // Funções para desabilitar um botão já clicado para não criar um flop e habilitar o botão posterior
 
-function disableButton1() {
+function disableButtonCar() {
   document.getElementById("Btncar").disabled = true ;
 }
 
-function disableButton2() {
+function disableButtonWheel() {
   document.getElementById("Btnwheel").disabled = true ;
 }
 
-function enableButton1(){
+function enableButtonCar(){
   document.getElementById("Btncar").disabled = false ;
 }
 
-function enableButton2(){
+function enableButtonWheel(){
   document.getElementById("Btnwheel").disabled = false ;
 }
 
 // Funções para mostrar e ocultar cada section
 
-function hideSection1(){
+function hideSectionCar(){
   var select = document.getElementById('box-change-color');
   select.style.display = 'none';
 }
 
-function hideSection2(){
+function hideSectionWheel(){
   var section = document.getElementById('box-change-wheel');
   section.style.display = 'none';
 }
 
-function showSection1(){
+function showSectionCar(){
   var section = document.getElementById('box-change-color');
   section.style.display = 'block';
 }
 
-function showSection2(){
+function showSectionWheel(){
   var section = document.getElementById('box-change-wheel');
   section.style.display = 'table';
 }
