@@ -185,6 +185,28 @@ section {
     background-color: #333333;
 }
 
+/* rainbow pallete */
+
+.rainbow-pallete .color1 {
+    background-color: purple;
+}
+
+.rainbow-pallete .color2 {
+    background-color: green;
+}
+
+.rainbow-pallete .color3 {
+    background-color: blue;
+}
+
+.rainbow-pallete .color4 {
+    background-color: orangered;
+}
+
+.rainbow-pallete .color5 {
+    background-color: violet;
+}
+
 @media (max-width:1030px) {
 
     .box-change {
