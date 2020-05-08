@@ -24,7 +24,7 @@ main > img {
     align-items: center;
     justify-content:center;
 
-    margin: 5% auto;
+    margin: 6vw auto 3vh;
     width: 30%;
     height: auto;
 
@@ -189,24 +189,17 @@ section {
     background-color: #333333;
 }
 
-@media (max-width:1030px) {
+/* mobile */
+
+@media (max-width: 1080px) {
 
     .box-change {
-        position: absolute;
-        bottom: 25%;
-        width: 100%;
-        height: 200px;
+        margin-bottom: 20%;
     }
 
-    #x3d, .car, .col-md-7 {
-        width: 100%;
-        height: auto;
-        padding: 100% auto;
-    }
+    main {
+        padding-top: 20%;
 
-    .col-md-7 {
-        flex: none;
-        max-width: 80%;
     }
 
     .icons button {
@@ -236,59 +229,6 @@ section {
     }
 
     #box-texture img {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-@media (max-width:1020px) {
-
-
-    main > img {
-
-        margin: 5vh auto 10vh;
-        width: 50%;
-        height: auto;
-    
-    }
-
-    .box-change {
-        position: absolute;
-        bottom: 30%;
-        width: 100%;
-        height: 200px;
-    }
-
-    #x3d, .car, .col-md-7 {
-        width: 100%;
-        height: auto;
-        padding: 100% auto;
-    }
-
-    .col-md-7 {
-        flex: none;
-        max-width: 80%;
-    }
-
-    .icons button {
-        border-radius: 100%;
-        width: 160px;
-        height: 160px;
-        border: none;
-    }
-
-    #icon, #icon2 {
-        width: auto;
-        height: 60px;
-    }
-
-    .palletes {
-        position: relative;
-        margin-top: 5%;
-        width: auto;
-    }
-
-    .palletes button {
         width: 100px;
         height: 100px;
     }
